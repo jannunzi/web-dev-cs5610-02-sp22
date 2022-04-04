@@ -1,23 +1,26 @@
 import logo from './logo.svg';
-import './App.css';
+// import './App.css';
+import Labs from "./components/Labs";
+import Hello from "./components/hello";
+import Tuiter from "./components/tuiter";
+import {BrowserRouter, Link, Route, Routes} from "react-router-dom";
+import Nav from "./components/nav";
+import Add from "./components/Add";
+import HelloApp from "./components/redux/hello/HelloApp";
+import TuiterApp from "./components/redux/tuiter/TuiterApp";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <BrowserRouter>
+        <Nav/>
+        <Routes>
+          <Route path="/add/:a/:b" element={<Add/>}/>
+          <Route path="/labs" element={<Labs/>}/>
+          <Route path="/hello" element={<HelloApp/>}/>
+          <Route path="/tuiter" element={<TuiterApp/>}/>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

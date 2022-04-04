@@ -1,0 +1,107 @@
+
+p[name='p45'] {
+    color: white;
+    background-color: blue;
+}
+p[name='p3'], h2[name='p3'] {
+    color: white;
+    background-color: blue;
+}
+
+.blue-on-yellow {
+    color: blue;
+    background-color: yellow;
+}
+
+/*p#p2 {*/
+#p2 {
+    color: yellow;
+    background-color: red
+}
+
+.fg-color-black { color: black; }
+.fg-color-white { color: white; }
+.fg-color-blue { color: #7070ff; }
+.fg-color-red { color: #ff7070; }
+.fg-color-green { color: green; }
+
+.css-examples {
+    background-color: lightgray;
+    font-family: Calibri;
+}
+
+.bg-color-yellow {
+    background-color: #ffff07;
+}
+.bg-color-blue {
+    background-color: #7070ff;
+}
+.bg-color-red {
+    background-color: #ff7070;
+}
+.bg-color-green {
+    background-color: green;
+}
+
+.bottom-right-justified {
+    padding-left: 50px;
+    padding-top: 60px;
+}
+
+.wd-border-fat { border-width: 20px 30px 20px 30px; }
+.wd-border-thin { border-width: 4px; }
+.wd-border-solid { border-style: solid; }
+.wd-border-dashed { border-style: dashed; }
+.wd-border-yellow { border-color: #ffff07; }
+.wd-border-red { border-color: #ff7070; }
+.wd-border-blue { border-color: #7070ff; }
+
+.padded-top-left {
+    padding-top: 50px;
+    padding-left: 50px;
+}
+.padded-bottom-right {
+    padding-bottom: 50px;
+    padding-right: 50px;
+}
+.padding-fat {
+    padding: 50px;
+}
+
+.border-radius-top {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+#p123 {
+    background-color: yellow;
+    width: 400px;
+    height: 200px;
+    overflow-y: auto;
+
+}
+#p234 {
+    background-color: blue;
+    color: white;
+    height: 200px;
+    width: 200px;
+    overflow-y: auto;
+}
+
+.horizontal-scroll {
+    width: 300px;
+    overflow-x: auto;
+    height: 200px;
+}
+
+.width-50pc {
+    width: 50%;
+}
+
+.width-33pc {
+    width: 33%;
+}
+
+.float-left {
+    float: left;
+}
