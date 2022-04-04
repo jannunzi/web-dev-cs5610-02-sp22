@@ -8,6 +8,7 @@ import Nav from "./components/nav";
 import Add from "./components/Add";
 import HelloApp from "./components/redux/hello/HelloApp";
 import TuiterApp from "./components/redux/tuiter/TuiterApp";
+import UserList from "./components/users/user-list";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/labs" element={<Labs/>}/>
           <Route path="/hello" element={<HelloApp/>}/>
           <Route path="/tuiter" element={<TuiterApp/>}/>
+          <Route path="/users" element={<UserList/>}/>
         </Routes>
       </BrowserRouter>
     </div>
