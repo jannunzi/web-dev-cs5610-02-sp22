@@ -2,8 +2,10 @@ import React, {useEffect, useRef, useState} from 'react';
 import axios from "axios";
 import Preformatted from "../components/preformatted";
 import {Link, useNavigate, useParams} from "react-router-dom";
+import {useProfile} from "../contexts/profile-context";
 
 const OmdbSearch = () => {
+  const {profile} = useProfile()
   const titleSearchRef = useRef()
   const {movieSearch} = useParams()
   const navigate = useNavigate()
@@ -22,6 +24,7 @@ const OmdbSearch = () => {
   return (
     <div>
       <h1>Omdb Search</h1>
+      {profile.email}
       <ul className="list-group">
         <li className="list-group-item">
           <button

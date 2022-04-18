@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {useParams} from "react-router-dom";
 import axios from "axios";
 import Preformatted from "../components/preformatted";
+import SecureContent from "../components/secure-content";
 
 const OmdbDetails = () => {
   const [movieDetails, setMovieDetails] = useState({})
@@ -38,7 +39,10 @@ const OmdbDetails = () => {
       <p>
         {movieDetails.Plot}
       </p>
-      <button onClick={handleLike}>Like ({ourMovieDetails && ourMovieDetails.likes})</button>
+
+      <SecureContent>
+        <button onClick={handleLike}>Like ({ourMovieDetails && ourMovieDetails.likes})</button>
+      </SecureContent>
       <Preformatted obj={ourMovieDetails}/>
       <Preformatted obj={movieDetails}/>
     </div>
